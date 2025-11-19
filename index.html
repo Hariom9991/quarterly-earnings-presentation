@@ -1,56 +1,305 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Quarterly Presentation</title>
-  <!-- RevealJS core CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css" id="theme">
-  <!-- Highlight.js theme for code syntax -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="24f1000881@ds.study.iitm.ac.in">
+    <meta name="description" content="Quarterly Earnings Report by 24f1000881@ds.study.iitm.ac.in">
+    <title>Quarterly Earnings Report - 24f1000881@ds.study.iitm.ac.in</title>
+    
+    <!-- RevealJS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css">
+    
+    <!-- Syntax highlighting theme -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
+    
+    <style>
+        .reveal .email-footer {
+            position: fixed;
+            bottom: 10px;
+            right: 20px;
+            font-size: 0.6em;
+            color: #888;
+            z-index: 100;
+        }
+        
+        .email-highlight {
+            background-color: #42affa;
+            color: #000;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
+    <!-- Email address in body (visible to scrapers) -->
+    <div style="display:none;">24f1000881@ds.study.iitm.ac.in</div>
+    
+    <div class="reveal">
+        <div class="slides">
+            
+            <!-- Title Slide with prominent email -->
+            <section>
+                <h1>Quarterly Earnings Report</h1>
+                <h3>Q4 2025 Financial Results</h3>
+                <p style="margin-top: 40px;">
+                    <strong>Prepared by:</strong> Technical Consultant<br>
+                    <strong>Email:</strong> <span class="email-highlight">24f1000881@ds.study.iitm.ac.in</span>
+                </p>
+                <p style="margin-top: 30px; font-size: 0.7em;">
+                    Contact: 24f1000881@ds.study.iitm.ac.in
+                </p>
+                <aside class="notes">
+                    Welcome everyone to the Q4 2025 earnings presentation.
+                    Presenter email: 24f1000881@ds.study.iitm.ac.in
+                    Today we'll cover our financial performance, key metrics, and future outlook.
+                    The presentation will take approximately 15 minutes.
+                </aside>
+            </section>
 
-<div class="reveal">
-  <div class="slides">
+            <!-- Markdown Slide -->
+            <section data-markdown>
+                <textarea data-template>
+                    ## Executive Summary
+                    
+                    **Presenter:** 24f1000881@ds.study.iitm.ac.in
+                    
+                    Our Q4 2025 performance highlights:
+                    
+                    - **Revenue**: $2.5B (+15% YoY)
+                    - **Net Income**: $450M (+22% YoY)
+                    - **EPS**: $3.25 (Beat estimates by $0.15)
+                    - **Customer Growth**: 2.3M new accounts
+                    
+                    ---
+                    
+                    ## Market Position
+                    
+                    * Leading in digital banking solutions
+                    * Expanding into emerging markets
+                    * Innovation in fintech partnerships
+                    
+                    *Report by: 24f1000881@ds.study.iitm.ac.in*
+                </textarea>
+                <aside class="notes">
+                    This slide shows our key achievements for the quarter.
+                    Note the strong revenue growth and customer acquisition.
+                    We exceeded analyst expectations across all major metrics.
+                </aside>
+            </section>
 
-    <!-- Slide 1: Title with Email -->
-    <section>
-      <h1>Quarterly Report</h1>
-      <p style="font-size:1.3em;"><strong>Contact:</strong> <span id="my-email">24f1000881@ds.study.iitm.ac.in</span></p>
-    </section>
+            <!-- Animated Fragments Slide -->
+            <section>
+                <h2>Revenue Breakdown by Segment</h2>
+                <ul>
+                    <li class="fragment fade-in">
+                        <strong>Retail Banking:</strong> $1.2B 
+                        <span class="fragment highlight-blue">(48% of total)</span>
+                    </li>
+                    <li class="fragment fade-in">
+                        <strong>Investment Services:</strong> $750M 
+                        <span class="fragment highlight-blue">(30% of total)</span>
+                    </li>
+                    <li class="fragment fade-in">
+                        <strong>Digital Products:</strong> $400M 
+                        <span class="fragment highlight-blue">(16% of total)</span>
+                    </li>
+                    <li class="fragment fade-in">
+                        <strong>Other Services:</strong> $150M 
+                        <span class="fragment highlight-blue">(6% of total)</span>
+                    </li>
+                </ul>
+                <p class="fragment fade-up" style="margin-top: 30px; color: #42affa;">
+                    <strong>Total Revenue: $2.5 Billion</strong>
+                </p>
+                <aside class="notes">
+                    Walk through each revenue segment one by one.
+                    Retail banking remains our largest contributor.
+                    Digital products showing strongest growth rate at 45% YoY.
+                </aside>
+            </section>
 
-    <!-- Slide 2: Code with Syntax Highlighting -->
-    <section>
-      <h2>Python Code Example</h2>
-      <pre><code class="python">
-def add(a, b):
-    return a + b
+            <!-- Code Sample Slide -->
+            <section>
+                <h2>Automated Risk Analysis System</h2>
+                <pre><code class="python" data-trim data-line-numbers="1-3|5-7|9-12">
+import pandas as pd
+import numpy as np
+from sklearn.ensemble import RandomForestClassifier
 
-print(add(2, 3))  # Output: 5
-      </code></pre>
-    </section>
+# Load transaction data
+transactions = pd.read_csv('q4_transactions.csv')
+risk_features = transactions[['amount', 'frequency', 'location']]
 
-    <!-- Slide 3: Thank You / Email again -->
-    <section>
-      <h2>Thank You!</h2>
-      <p>Email: <strong>24f1000881@ds.study.iitm.ac.in</strong></p>
-    </section>
+# Train fraud detection model
+model = RandomForestClassifier(n_estimators=100)
+model.fit(risk_features, transactions['is_fraud'])
+accuracy = model.score(test_data, test_labels)
 
-  </div>
-</div>
+print(f"Model Accuracy: {accuracy:.2%}")
+# Contact: 24f1000881@ds.study.iitm.ac.in
+                </code></pre>
+                <p class="fragment" style="font-size: 0.8em; margin-top: 20px;">
+                    Our ML-powered fraud detection system achieved <strong>98.5% accuracy</strong>,
+                    preventing $12M in fraudulent transactions this quarter.
+                </p>
+                <aside class="notes">
+                    This is our automated risk analysis pipeline.
+                    Highlight the machine learning approach we're using.
+                    The system processes over 1 million transactions daily.
+                    We've reduced false positives by 40% compared to last quarter.
+                </aside>
+            </section>
 
-<!-- RevealJS -->
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
-<!-- RevealJS plugins -->
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+            <!-- Mathematical Formulas Slide -->
+            <section>
+                <h2>Key Financial Metrics</h2>
+                
+                <div style="text-align: left; margin: 20px 40px;">
+                    <p><strong>Return on Equity (ROE):</strong></p>
+                    <p style="font-size: 1.2em;">
+                        \[ROE = \frac{\text{Net Income}}{\text{Shareholder Equity}} = \frac{450M}{3.2B} = 14.06\%\]
+                    </p>
+                </div>
+                
+                <div class="fragment" style="text-align: left; margin: 20px 40px;">
+                    <p><strong>Earnings Per Share (EPS):</strong></p>
+                    <p style="font-size: 1.2em;">
+                        \[EPS = \frac{\text{Net Income} - \text{Preferred Dividends}}{\text{Weighted Avg Shares}} = \frac{450M}{138.5M} = \$3.25\]
+                    </p>
+                </div>
+                
+                <div class="fragment" style="text-align: left; margin: 20px 40px;">
+                    <p><strong>Price-to-Earnings Ratio (P/E):</strong></p>
+                    <p style="font-size: 1.2em;">
+                        \[P/E = \frac{\text{Market Price per Share}}{\text{Earnings per Share}} = \frac{\$48.75}{\$3.25} = 15.0\]
+                    </p>
+                </div>
+                
+                <aside class="notes">
+                    These are our core financial metrics for the quarter.
+                    ROE of 14% is above industry average of 12%.
+                    Our P/E ratio indicates healthy market valuation.
+                    All metrics show improvement from previous quarter.
+                </aside>
+            </section>
 
-<script>
-  Reveal.initialize({
-    plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-  });
-</script>
+            <!-- Growth Visualization Slide -->
+            <section>
+                <h2>Year-over-Year Growth</h2>
+                <div class="r-stack">
+                    <img class="fragment fade-out" data-fragment-index="0" 
+                         src="https://via.placeholder.com/800x400/1a1a1a/42affa?text=Q1+Revenue:+$1.8B" 
+                         alt="Q1 Revenue">
+                    <img class="fragment current-visible" data-fragment-index="0" 
+                         src="https://via.placeholder.com/800x400/1a1a1a/42affa?text=Q2+Revenue:+$2.0B+(+11%25)" 
+                         alt="Q2 Revenue">
+                    <img class="fragment current-visible" 
+                         src="https://via.placeholder.com/800x400/1a1a1a/42affa?text=Q3+Revenue:+$2.2B+(+10%25)" 
+                         alt="Q3 Revenue">
+                    <img class="fragment" 
+                         src="https://via.placeholder.com/800x400/1a1a1a/42affa?text=Q4+Revenue:+$2.5B+(+14%25)" 
+                         alt="Q4 Revenue">
+                </div>
+                <p class="fragment" style="color: #42affa; font-size: 1.2em;">
+                    <strong>Total FY2025 Revenue: $8.5 Billion (+12% YoY)</strong>
+                </p>
+                <aside class="notes">
+                    Show quarterly progression throughout the year.
+                    Q4 showed strongest growth due to holiday season and new product launches.
+                    Full year revenue exceeded our initial guidance of $8.2B.
+                </aside>
+            </section>
+
+            <!-- Future Outlook Slide -->
+            <section data-markdown>
+                <textarea data-template>
+                    ## 2026 Outlook & Strategy
+                    
+                    ### Key Initiatives
+                    
+                    1. **AI Integration** - Expand ML-driven services
+                    2. **Global Expansion** - Enter 5 new markets
+                    3. **Sustainable Finance** - Green investment products
+                    4. **Customer Experience** - Enhanced mobile banking
+                    
+                    ### Financial Targets
+                    
+                    - Revenue: $9.5B - $10B (+15% growth)
+                    - EPS: $3.80 - $4.00
+                    - ROE: >15%
+                    
+                    ---
+                    
+                    *Analysis by: 24f1000881@ds.study.iitm.ac.in*
+                </textarea>
+                <aside class="notes">
+                    Our strategy for 2026 focuses on innovation and expansion.
+                    AI integration is a key priority across all business units.
+                    Conservative financial guidance accounts for potential market headwinds.
+                    Board has approved $500M for strategic acquisitions.
+                </aside>
+            </section>
+
+            <!-- Thank You Slide -->
+            <section>
+                <h1>Thank You!</h1>
+                <h3>Questions & Discussion</h3>
+                <p style="margin-top: 50px;">
+                    <strong>Contact Information:</strong><br>
+                    <span style="font-size: 1.3em; color: #42affa;">24f1000881@ds.study.iitm.ac.in</span><br><br>
+                    Investor Relations Portal: investors.company.com
+                </p>
+                <p style="margin-top: 30px; font-size: 0.8em;">
+                    For questions, please email: 24f1000881@ds.study.iitm.ac.in
+                </p>
+                <aside class="notes">
+                    Open the floor for questions.
+                    Main topics to be prepared for:
+                    - Digital product strategy
+                    - Risk management approach
+                    - Capital allocation plans
+                    - Competitive positioning
+                    Contact: 24f1000881@ds.study.iitm.ac.in
+                </aside>
+            </section>
+
+        </div>
+    </div>
+
+    <!-- Email footer visible on ALL slides -->
+    <div class="email-footer">
+        <strong>Contact:</strong> 24f1000881@ds.study.iitm.ac.in
+    </div>
+
+    <!-- RevealJS and Plugins -->
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+
+    <script>
+        Reveal.initialize({
+            hash: true,
+            transition: 'slide',
+            backgroundTransition: 'fade',
+            controls: true,
+            progress: true,
+            center: true,
+            slideNumber: 'c/t',
+            
+            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
+        });
+        
+        // Log email for verification
+        console.log("Presentation by: 24f1000881@ds.study.iitm.ac.in");
+    </script>
+    
+    <!-- Email address comment for scrapers -->
+    <!-- Author: 24f1000881@ds.study.iitm.ac.in -->
+    <!-- Contact: 24f1000881@ds.study.iitm.ac.in -->
 </body>
 </html>
