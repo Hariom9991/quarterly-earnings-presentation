@@ -1,305 +1,212 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="24f1000881@ds.study.iitm.ac.in">
-    <meta name="description" content="Quarterly Earnings Report by 24f1000881@ds.study.iitm.ac.in">
-    <title>Quarterly Earnings Report - 24f1000881@ds.study.iitm.ac.in</title>
-    
-    <!-- RevealJS CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/black.css">
-    
-    <!-- Syntax highlighting theme -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css">
-    
+  <head>
+    <meta charset="utf-8" />
+    <title>Interactive Quarterly Earnings Report</title>
+
+    <!-- RevealJS core CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css"
+    />
+    <!-- Theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css"
+      id="theme"
+    />
+    <!-- Code highlighting theme -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css"
+    />
+
     <style>
-        .reveal .email-footer {
-            position: fixed;
-            bottom: 10px;
-            right: 20px;
-            font-size: 0.6em;
-            color: #888;
-            z-index: 100;
-        }
-        
-        .email-highlight {
-            background-color: #42affa;
-            color: #000;
-            padding: 2px 8px;
-            border-radius: 3px;
-            font-weight: bold;
-        }
+      /* Custom styles (optional) */
+      .reveal h1,
+      .reveal h2,
+      .reveal h3 {
+        color: #0b5394;
+      }
+
+      .kpi {
+        font-size: 1.4em;
+        font-weight: bold;
+      }
     </style>
-</head>
-<body>
-    <!-- Email address in body (visible to scrapers) -->
-    <div style="display:none;">24f1000881@ds.study.iitm.ac.in</div>
-    
+  </head>
+
+  <body>
     <div class="reveal">
-        <div class="slides">
-            
-            <!-- Title Slide with prominent email -->
-            <section>
-                <h1>Quarterly Earnings Report</h1>
-                <h3>Q4 2025 Financial Results</h3>
-                <p style="margin-top: 40px;">
-                    <strong>Prepared by:</strong> Technical Consultant<br>
-                    <strong>Email:</strong> <span class="email-highlight">24f1000881@ds.study.iitm.ac.in</span>
-                </p>
-                <p style="margin-top: 30px; font-size: 0.7em;">
-                    Contact: 24f1000881@ds.study.iitm.ac.in
-                </p>
-                <aside class="notes">
-                    Welcome everyone to the Q4 2025 earnings presentation.
-                    Presenter email: 24f1000881@ds.study.iitm.ac.in
-                    Today we'll cover our financial performance, key metrics, and future outlook.
-                    The presentation will take approximately 15 minutes.
-                </aside>
-            </section>
+      <div class="slides">
+        <!-- Slide 1: Title + Email (REQUIRED: email visible) -->
+        <section>
+          <h1>Q4 Interactive Earnings Report</h1>
+          <p>Prepared by: Technical Consultant</p>
+          <p>
+            Contact:
+            <strong>24f1000881@ds.study.iitm.ac.in</strong>
+          </p>
+          <p>For: Key Stakeholders & Executive Leadership</p>
 
-            <!-- Markdown Slide -->
-            <section data-markdown>
-                <textarea data-template>
-                    ## Executive Summary
-                    
-                    **Presenter:** 24f1000881@ds.study.iitm.ac.in
-                    
-                    Our Q4 2025 performance highlights:
-                    
-                    - **Revenue**: $2.5B (+15% YoY)
-                    - **Net Income**: $450M (+22% YoY)
-                    - **EPS**: $3.25 (Beat estimates by $0.15)
-                    - **Customer Growth**: 2.3M new accounts
-                    
-                    ---
-                    
-                    ## Market Position
-                    
-                    * Leading in digital banking solutions
-                    * Expanding into emerging markets
-                    * Innovation in fintech partnerships
-                    
-                    *Report by: 24f1000881@ds.study.iitm.ac.in*
-                </textarea>
-                <aside class="notes">
-                    This slide shows our key achievements for the quarter.
-                    Note the strong revenue growth and customer acquisition.
-                    We exceeded analyst expectations across all major metrics.
-                </aside>
-            </section>
+          <!-- Speaker notes (REQUIRED) -->
+          <aside class="notes">
+            Welcome everyone. This deck showcases how we can use modern
+            web-based presentations (RevealJS) for interactive financial
+            reporting. I’ll begin with a high-level earnings overview and then
+            drill down into revenue, costs and projections.
+          </aside>
+        </section>
 
-            <!-- Animated Fragments Slide -->
-            <section>
-                <h2>Revenue Breakdown by Segment</h2>
-                <ul>
-                    <li class="fragment fade-in">
-                        <strong>Retail Banking:</strong> $1.2B 
-                        <span class="fragment highlight-blue">(48% of total)</span>
-                    </li>
-                    <li class="fragment fade-in">
-                        <strong>Investment Services:</strong> $750M 
-                        <span class="fragment highlight-blue">(30% of total)</span>
-                    </li>
-                    <li class="fragment fade-in">
-                        <strong>Digital Products:</strong> $400M 
-                        <span class="fragment highlight-blue">(16% of total)</span>
-                    </li>
-                    <li class="fragment fade-in">
-                        <strong>Other Services:</strong> $150M 
-                        <span class="fragment highlight-blue">(6% of total)</span>
-                    </li>
-                </ul>
-                <p class="fragment fade-up" style="margin-top: 30px; color: #42affa;">
-                    <strong>Total Revenue: $2.5 Billion</strong>
-                </p>
-                <aside class="notes">
-                    Walk through each revenue segment one by one.
-                    Retail banking remains our largest contributor.
-                    Digital products showing strongest growth rate at 45% YoY.
-                </aside>
-            </section>
+        <!-- Slide 2: Markdown slide (REQUIRED) -->
+        <section data-markdown>
+          <textarea data-template>
+## Earnings Overview (Markdown Slide)
 
-            <!-- Code Sample Slide -->
-            <section>
-                <h2>Automated Risk Analysis System</h2>
-                <pre><code class="python" data-trim data-line-numbers="1-3|5-7|9-12">
+- **Total Revenue:** $ 120M  
+- **Net Income:** $ 24M  
+- **YoY Revenue Growth:** **+12%**
+- **Net Profit Margin:** 20%
+
+---
+
+### Segment Performance
+
+- Retail Banking: +8%  
+- Corporate Banking: +15%  
+- Wealth Management: +18%
+
+> Key message: All business units show **positive growth**, with strongest performance in Wealth Management.
+          </textarea>
+        </section>
+
+        <!-- Slide 3: Fragments / animated elements (REQUIRED) -->
+        <section>
+          <h2>Key Takeaways (with Fragments)</h2>
+          <ul>
+            <li class="fragment">Revenue growth driven by corporate clients</li>
+            <li class="fragment">
+              Cost optimization improved operating margin
+            </li>
+            <li class="fragment fade-up">
+              Digital channels contributed <span class="kpi">35%</span> of new
+              account openings
+            </li>
+            <li class="fragment highlight-current-blue">
+              Risk profile remains within approved limits
+            </li>
+          </ul>
+
+          <aside class="notes">
+            Use the fragments to reveal each point gradually while speaking.
+            Pause after each item to provide a concrete example or data point
+            from the underlying analysis.
+          </aside>
+        </section>
+
+        <!-- Slide 4: Code sample with syntax highlighting (REQUIRED) -->
+        <section>
+          <h2>Data Pipeline (Code Example)</h2>
+          <pre><code class="language-python" data-line-numbers="1-4|6-10|12-15">
 import pandas as pd
-import numpy as np
-from sklearn.ensemble import RandomForestClassifier
 
-# Load transaction data
-transactions = pd.read_csv('q4_transactions.csv')
-risk_features = transactions[['amount', 'frequency', 'location']]
+# Load transactional data
+df = pd.read_csv("transactions.csv")
 
-# Train fraud detection model
-model = RandomForestClassifier(n_estimators=100)
-model.fit(risk_features, transactions['is_fraud'])
-accuracy = model.score(test_data, test_labels)
+# Aggregate revenue by quarter
+quarterly = (
+    df.groupby("quarter", as_index=False)["revenue"]
+      .sum()
+      .rename(columns={"revenue": "total_revenue"})
+)
 
-print(f"Model Accuracy: {accuracy:.2%}")
-# Contact: 24f1000881@ds.study.iitm.ac.in
-                </code></pre>
-                <p class="fragment" style="font-size: 0.8em; margin-top: 20px;">
-                    Our ML-powered fraud detection system achieved <strong>98.5% accuracy</strong>,
-                    preventing $12M in fraudulent transactions this quarter.
-                </p>
-                <aside class="notes">
-                    This is our automated risk analysis pipeline.
-                    Highlight the machine learning approach we're using.
-                    The system processes over 1 million transactions daily.
-                    We've reduced false positives by 40% compared to last quarter.
-                </aside>
-            </section>
+# Compute year-over-year growth
+quarterly["yoy_growth"] = (
+    quarterly["total_revenue"]
+      .pct_change(periods=4)
+      .round(4)
+)
 
-            <!-- Mathematical Formulas Slide -->
-            <section>
-                <h2>Key Financial Metrics</h2>
-                
-                <div style="text-align: left; margin: 20px 40px;">
-                    <p><strong>Return on Equity (ROE):</strong></p>
-                    <p style="font-size: 1.2em;">
-                        \[ROE = \frac{\text{Net Income}}{\text{Shareholder Equity}} = \frac{450M}{3.2B} = 14.06\%\]
-                    </p>
-                </div>
-                
-                <div class="fragment" style="text-align: left; margin: 20px 40px;">
-                    <p><strong>Earnings Per Share (EPS):</strong></p>
-                    <p style="font-size: 1.2em;">
-                        \[EPS = \frac{\text{Net Income} - \text{Preferred Dividends}}{\text{Weighted Avg Shares}} = \frac{450M}{138.5M} = \$3.25\]
-                    </p>
-                </div>
-                
-                <div class="fragment" style="text-align: left; margin: 20px 40px;">
-                    <p><strong>Price-to-Earnings Ratio (P/E):</strong></p>
-                    <p style="font-size: 1.2em;">
-                        \[P/E = \frac{\text{Market Price per Share}}{\text{Earnings per Share}} = \frac{\$48.75}{\$3.25} = 15.0\]
-                    </p>
-                </div>
-                
-                <aside class="notes">
-                    These are our core financial metrics for the quarter.
-                    ROE of 14% is above industry average of 12%.
-                    Our P/E ratio indicates healthy market valuation.
-                    All metrics show improvement from previous quarter.
-                </aside>
-            </section>
+print(quarterly)
+          </code></pre>
 
-            <!-- Growth Visualization Slide -->
-            <section>
-                <h2>Year-over-Year Growth</h2>
-                <div class="r-stack">
-                    <img class="fragment fade-out" data-fragment-index="0" 
-                         src="https://via.placeholder.com/800x400/1a1a1a/42affa?text=Q1+Revenue:+$1.8B" 
-                         alt="Q1 Revenue">
-                    <img class="fragment current-visible" data-fragment-index="0" 
-                         src="https://via.placeholder.com/800x400/1a1a1a/42affa?text=Q2+Revenue:+$2.0B+(+11%25)" 
-                         alt="Q2 Revenue">
-                    <img class="fragment current-visible" 
-                         src="https://via.placeholder.com/800x400/1a1a1a/42affa?text=Q3+Revenue:+$2.2B+(+10%25)" 
-                         alt="Q3 Revenue">
-                    <img class="fragment" 
-                         src="https://via.placeholder.com/800x400/1a1a1a/42affa?text=Q4+Revenue:+$2.5B+(+14%25)" 
-                         alt="Q4 Revenue">
-                </div>
-                <p class="fragment" style="color: #42affa; font-size: 1.2em;">
-                    <strong>Total FY2025 Revenue: $8.5 Billion (+12% YoY)</strong>
-                </p>
-                <aside class="notes">
-                    Show quarterly progression throughout the year.
-                    Q4 showed strongest growth due to holiday season and new product launches.
-                    Full year revenue exceeded our initial guidance of $8.2B.
-                </aside>
-            </section>
+          <aside class="notes">
+            This example illustrates how we generate the quarterly aggregates
+            and year-over-year growth rates directly from raw transactional
+            data using Python and pandas. In practice, this runs inside our
+            analytics pipeline.
+          </aside>
+        </section>
 
-            <!-- Future Outlook Slide -->
-            <section data-markdown>
-                <textarea data-template>
-                    ## 2026 Outlook & Strategy
-                    
-                    ### Key Initiatives
-                    
-                    1. **AI Integration** - Expand ML-driven services
-                    2. **Global Expansion** - Enter 5 new markets
-                    3. **Sustainable Finance** - Green investment products
-                    4. **Customer Experience** - Enhanced mobile banking
-                    
-                    ### Financial Targets
-                    
-                    - Revenue: $9.5B - $10B (+15% growth)
-                    - EPS: $3.80 - $4.00
-                    - ROE: >15%
-                    
-                    ---
-                    
-                    *Analysis by: 24f1000881@ds.study.iitm.ac.in*
-                </textarea>
-                <aside class="notes">
-                    Our strategy for 2026 focuses on innovation and expansion.
-                    AI integration is a key priority across all business units.
-                    Conservative financial guidance accounts for potential market headwinds.
-                    Board has approved $500M for strategic acquisitions.
-                </aside>
-            </section>
+        <!-- Slide 5: Financial formula / math (REQUIRED) -->
+        <section>
+          <h2>Financial Projection Formula</h2>
+          <p>Compound growth of quarterly revenue:</p>
+          <p>
+            \[
+            R_t = R_0 \left(1 + \frac{g}{n}\right)^{n \cdot t}
+            \]
+          </p>
+          <p>Where:</p>
+          <ul>
+            <li>\( R_t \): projected revenue at time \( t \)</li>
+            <li>\( R_0 \): current revenue base</li>
+            <li>\( g \): expected annual growth rate</li>
+            <li>\( n \): number of compounding periods per year</li>
+          </ul>
 
-            <!-- Thank You Slide -->
-            <section>
-                <h1>Thank You!</h1>
-                <h3>Questions & Discussion</h3>
-                <p style="margin-top: 50px;">
-                    <strong>Contact Information:</strong><br>
-                    <span style="font-size: 1.3em; color: #42affa;">24f1000881@ds.study.iitm.ac.in</span><br><br>
-                    Investor Relations Portal: investors.company.com
-                </p>
-                <p style="margin-top: 30px; font-size: 0.8em;">
-                    For questions, please email: 24f1000881@ds.study.iitm.ac.in
-                </p>
-                <aside class="notes">
-                    Open the floor for questions.
-                    Main topics to be prepared for:
-                    - Digital product strategy
-                    - Risk management approach
-                    - Capital allocation plans
-                    - Competitive positioning
-                    Contact: 24f1000881@ds.study.iitm.ac.in
-                </aside>
-            </section>
+          <aside class="notes">
+            Here I explain how we move from historical results to forward-looking
+            projections. Emphasize that this is a simplified model and that
+            scenario analysis and stress testing are also performed.
+          </aside>
+        </section>
 
-        </div>
+        <!-- Slide 6: Simple "interactive-ish" chart hook -->
+        <section id="chart-slide">
+          <h2>Interactive Revenue Trend (Placeholder)</h2>
+          <p>Example of where a D3 / Plot chart could go.</p>
+          <div id="revenue-chart" style="width: 80%; height: 300px; border: 1px dashed #aaa; display:flex; align-items:center; justify-content:center;">
+            <em>Interactive chart area</em>
+          </div>
+
+          <aside class="notes">
+            In a real deployment, this slide can host a live D3.js or Observable
+            Plot visualization that reacts to filters (e.g., region, segment).
+            For the assignment, this placeholder is enough to show integration.
+          </aside>
+        </section>
+      </div>
     </div>
 
-    <!-- Email footer visible on ALL slides -->
-    <div class="email-footer">
-        <strong>Contact:</strong> 24f1000881@ds.study.iitm.ac.in
-    </div>
-
-    <!-- RevealJS and Plugins -->
+    <!-- Reveal core JS -->
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+
+    <!-- Plugins -->
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
 
     <script>
-        Reveal.initialize({
-            hash: true,
-            transition: 'slide',
-            backgroundTransition: 'fade',
-            controls: true,
-            progress: true,
-            center: true,
-            slideNumber: 'c/t',
-            
-            plugins: [ RevealMarkdown, RevealHighlight, RevealNotes, RevealMath.KaTeX ]
-        });
-        
-        // Log email for verification
-        console.log("Presentation by: 24f1000881@ds.study.iitm.ac.in");
+      Reveal.initialize({
+        hash: true,          // update URL as you move through slides
+        slideNumber: true,   // show slide numbers
+        controls: true,
+        progress: true,
+        center: true,
+        plugins: [
+          RevealMarkdown,
+          RevealHighlight,
+          RevealMath.MathJax2,
+          RevealNotes
+        ],
+        mathjax2: {
+          mathjax:
+            "https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_HTML-full",
+          config: "TeX-AMS_HTML-full",
+        },
+      });
     </script>
-    
-    <!-- Email address comment for scrapers -->
-    <!-- Author: 24f1000881@ds.study.iitm.ac.in -->
-    <!-- Contact: 24f1000881@ds.study.iitm.ac.in -->
-</body>
+  </body>
 </html>
