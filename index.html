@@ -1,148 +1,121 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <title>Interactive Quarterly Earnings Report</title>
+<head>
+  <meta charset="utf-8">
+  <title>Quarterly Earnings Report</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Reveal.js CSS (from CDN for GitHub Pages compatibility) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js/dist/theme/black.css"> <!-- change theme as desired -->
+  <!-- Code syntax theme -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js/styles/github-dark.css">
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Title Slide -->
+      <section>
+        <h1>Quarterly Earnings Report</h1>
+        <p>Q3 2025</p>
+        <p><strong>Contact:</strong> 24f1000881@ds.study.iitm.ac.in</p>
+        <aside class="notes">
+          Welcome stakeholders, introduce yourself and the purpose of the meeting.
+        </aside>
+      </section>
 
-    <!-- RevealJS core CSS -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css"
-    />
-    <!-- Theme -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/white.css"
-      id="theme"
-    />
-    <!-- Code highlighting theme -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css"
-    />
+      <!-- Markdown Slide Example -->
+      <section data-markdown>
+        <textarea data-template>
+## Executive Summary
 
-    <style>
-      .reveal h1,
-      .reveal h2 {
-        color: #0b5394;
-      }
-      footer {
-        font-size: 0.6em;
-        text-align: center;
-        position: absolute;
-        bottom: 20px;
-        width: 100%;
-      }
-    </style>
-  </head>
+- Revenue rose by **18%** YoY
+- Net profit up by 12% (₹ crores)
+- Dividend declared: 1.5%
 
-  <body>
-    <div class="reveal">
-      <div class="slides">
+<!-- .element: class="fragment" -->
 
-        <!-- Slide 1 -->
-        <section>
-          <h1>Q4 Earnings Report</h1>
-          <p>Email: <strong>24f1000881@ds.study.iitm.ac.in</strong></p>
-          <p>Technical Consultant, Finance Division</p>
+Market highlights:
+- Surpassed industry average growth <!-- .element: class="fragment" -->
+- Strengthened digital banking adoption <!-- .element: class="fragment" -->
+- Robust compliance & risk controls <!-- .element: class="fragment" -->
+<!-- Speaker Notes: Expand briefly on each bullet for audience context -->
+        </textarea>
+        <aside class="notes">
+          This slide is written in Markdown. Discuss each point as it appears (animated via fragments).
+        </aside>
+      </section>
 
-          <aside class="notes">
-            Make sure to mention that this interactive deck is built using RevealJS and supports live data integration.
-          </aside>
-        </section>
+      <!-- Code Sample with Syntax Highlighting -->
+      <section>
+        <h2>API Query Sample</h2>
+        <pre><code class="language-python" data-line-numbers="1-3">
+import requests
 
-        <!-- Markdown Slide -->
-        <section data-markdown>
-          <textarea data-template>
-## Performance Highlights
+url = 'https://api.finance.com/quarterly'
+r = requests.get(url, params={'q': 'Q3', 'year': 2025})
+print(r.json())
+        </code></pre>
+        <aside class="notes">
+          Here’s a Python code sample with syntax highlighting. Explain how to fetch quarterly results via the API.
+        </aside>
+      </section>
 
-- **Revenue Growth:** +12%
-- **Net Profit Margin:** 20%
-- **Digital Growth:** +35%
+      <!-- Animated List with Fragments -->
+      <section>
+        <h2>Revenue Breakdown</h2>
+        <ul>
+          <li class="fragment">Retail Banking: ₹8,500 Cr</li>
+          <li class="fragment">Corporate Banking: ₹13,000 Cr</li>
+          <li class="fragment">Investment & Others: ₹4,000 Cr</li>
+        </ul>
+        <aside class="notes">
+          Each line will appear one by one—emphasize the largest segment for impact.
+        </aside>
+      </section>
 
-> Strong performance driven by wealth management expansion.
-          </textarea>
-        </section>
+      <!-- Math Equation Slide -->
+      <section>
+        <h2>Net Interest Margin</h2>
+        <p>
+          Net Interest Margin (NIM): 
+        </p>
+        <p>
+          $$\text{NIM} = \frac{\text{Interest Income} - \text{Interest Expense}}{Average Earning Assets}$$
+        </p>
+        <aside class="notes">
+          Financial formulas are rendered using LaTeX. Clarify why NIM is a critical performance metric for banks.
+        </aside>
+      </section>
 
-        <!-- Fragments Slide -->
-        <section>
-          <h2>Key Drivers</h2>
-          <ul>
-            <li class="fragment">Retail Banking +8%</li>
-            <li class="fragment">Corporate Banking +15%</li>
-            <li class="fragment fade-up">Wealth Management +18%</li>
-          </ul>
-
-          <aside class="notes">
-            Reveal items one by one to explain the impact of each segment.
-          </aside>
-        </section>
-
-        <!-- Code Example -->
-        <section>
-          <h2>Revenue Pipeline (Python Code)</h2>
-          <pre><code class="language-python" data-line-numbers="1-3|5-8|10-13">
-import pandas as pd
-df = pd.read_csv('transactions.csv')
-
-# Compute total revenue
-revenue = df.groupby('quarter')['amount'].sum()
-
-# YoY growth
-growth = revenue.pct_change(periods=4).round(4)
-
-print(growth)
-          </code></pre>
-          <aside class="notes">
-            This code extracts quarterly revenue and calculates year-on-year growth.
-          </aside>
-        </section>
-
-        <!-- Math Equation -->
-        <section>
-          <h2>Revenue Projection</h2>
-          <p>
-            \[
-            R_t = R_0 (1 + \frac{g}{n})^{n \cdot t}
-            \]
-          </p>
-          <aside class="notes">
-            Simple growth projection formula commonly used in finance.
-          </aside>
-        </section>
-
-      </div>
+      <!-- Closing (with email repeated) -->
+      <section>
+        <h2>Thank You</h2>
+        <p>Questions?</p>
+        <p><strong>Email:</strong> 24f1000881@ds.study.iitm.ac.in</p>
+        <aside class="notes">
+          Invite questions and display your contact information again for follow-up.
+        </aside>
+      </section>
     </div>
+  </div>
 
-    <!-- Reveal Core JS -->
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+  <!-- Reveal.js & Plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/dist/reveal.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/markdown/markdown.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/highlight/highlight.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/reveal.js/plugin/notes/notes.js"></script>
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-    <!-- Plugins -->
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
-
-    <!-- Init -->
-    <script>
-      Reveal.initialize({
-        hash: true,
-        slideNumber: true,
-        plugins: [
-          RevealMarkdown,
-          RevealHighlight,
-          RevealMath.MathJax2,
-          RevealNotes
-        ],
-        mathjax2: {
-          mathjax:
-            "https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS_HTML-full",
-          config: "TeX-AMS_HTML-full",
-        },
-      });
-    </script>
-
-    <footer>Contact: 24f1000881@ds.study.iitm.ac.in</footer>
-
-  </body>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ],
+      mathjax3: {
+        tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+      },
+      transition: 'fade' // or 'slide', 'convex', 'concave', 'zoom'
+    });
+  </script>
+</body>
 </html>
