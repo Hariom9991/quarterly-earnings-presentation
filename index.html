@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Q3 Quarterly Earnings Report - Financial Institution</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/theme/blood.css" id="theme" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/monokai.css" />
+    <style>
+      .reveal { font-family: 'Georgia', serif; }
+      .reveal h1, .reveal h2 { color: #cc0000; } /* Corporate Red */
+    </style>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        
+        <section>
+          <h1>Q3 Quarterly Earnings Report</h1>
+          <p>Financial Performance and Strategic Outlook</p>
+          <p><small>Presented by: Technical Consultant</small></p>
+          <p style="margin-top: 50px;">
+            <small>Contact: <strong>24f1000881@ds.study.iitm.ac.in</strong></small>
+          </p>
+          <aside class="notes">
+            Welcome the stakeholders and briefly introduce the report's scope: Q3 performance review and forward-looking strategy.
+          </aside>
+        </section>
+
+        <section data-markdown>
+          <textarea data-template>
+            ## 📈 Key Financial Highlights
+
+            - **Revenue Growth:** Achieved **12%** year-over-year increase.
+            - **Net Income:** **$5.2 Billion**, exceeding forecast by 5%.
+            - **EPS:** Diluted Earnings Per Share is **$1.15**.
+            
+            ---
+            
+            ## 🚀 Strategic Focus Areas
+
+            | Area | Q4 Goal | Status |
+            | :--- | :---: | :---: |
+            | Digitalization | 90% customer adoption | On Track |
+            | Risk Management | Decrease default rate by 0.5% | Needs Focus |
+          </textarea>
+          <aside class="notes">
+            Use the first column in the table to emphasize strong revenue and income figures. Transition to the strategic outlook and highlight the risk management challenge as a key discussion point.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Quarterly Revenue Breakdown</h2>
+          <p>Key revenue drivers for the quarter:</p>
+          <ul>
+            <li class="fragment fade-right">Investment Banking: Strong M&A activity **(+18%)**</li>
+            <li class="fragment fade-right">Retail Banking: Stable growth in deposits **(+5%)**</li>
+            <li class="fragment fade-right">Asset Management: Solid performance in equity funds **(+10%)**</li>
+            <li class="fragment highlight-red">Digital Platform Fees: **New** major revenue stream **(+25%)**</li>
+          </ul>
+          <aside class="notes">
+            Use the fragments to reveal each point one-by-one, building up the full picture. Emphasize the **Digital Platform Fees** as a new, high-growth area for stakeholder attention.
+          </aside>
+        </section>
+
+        <section>
+          <h2>Risk Weighted Asset Calculation (Simplified)</h2>
+          <pre><code class="python" data-line-numbers="2|3-4|6-8">
+# Python pseudo-code for a simplified RWA calculation
+def calculate_rwa(asset_value, risk_weight):
+    # Risk-Weighted Asset (RWA) = Asset Value * Risk Weight
+    rwa = asset_value * risk_weight
+    return rwa
+
+# Example: A corporate loan (Risk Weight = 1.0)
+loan_value = 1000000 # $1M
+rwa_loan = calculate_rwa(loan_value, 1.0) 
+# The lines will highlight sequentially based on data-line-numbers.
+          </code></pre>
+          <aside class="notes">
+            Explain that this is a simplified view of the complex Basel III framework. The code highlights the core multiplication principle. Line 2 (function definition) is setup, lines 3-4 (calculation) are the core logic, and lines 6-8 (example) show practical application.
+          </aside>
+        </section>
+
+        <section>
+          <h2>🏦 Capital Adequacy Ratio (CAR)</h2>
+          <p>A key metric for financial stability and regulatory compliance.</p>
+          \[
+          \text{CAR} = \frac{\text{Tier 1 Capital} + \text{Tier 2 Capital}}{\text{Risk-Weighted Assets (RWA)}}
+          \]
+          <br>
+          <p class="fragment fade-in">Target CAR for Q4: **13.5%** (Current: 13.2%)</p>
+          <aside class="notes">
+            This slide uses the mathematical notation to present the formal CAR equation. Explain that the difference between the current and target CAR is minimal, but we must maintain focus on RWA optimization to meet the Q4 goal.
+          </aside>
+        </section>
+
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/dist/reveal.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/markdown/markdown.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/highlight/highlight.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/math/math.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/reveal.js@4.5.0/plugin/notes/notes.js"></script>
+    
+    <script>
+      // Initialize the presentation with required plugins
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        // Optional: Change the transition to 'convex' for a modern feel
+        transition: 'convex',
+        // Plugins must be included here to be active
+        plugins: [ RevealMarkdown, RevealHighlight, RevealMath, RevealNotes ]
+      });
+    </script>
+  </body>
+</html>
